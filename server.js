@@ -26,7 +26,7 @@ app.post('/comments', (request, response) => {
     response.json({ test: 'hey' })
 })
 app.post('/likes',(request,response)=>{
-    console.log(request.body);
+    // console.log(request.body);
     db.update({ user: request.body.u }, { $push: { likes: request.body.li } }, {}, (err, num) => {
         // ...
     });
@@ -50,7 +50,7 @@ app.post('/tweet', (request, response) => {
             likes: request.body.likes,
             comments: request.body.comments,
         }
-        console.log(tweet);
+        // console.log(tweet);
         db.insert(tweet, (err, newDoc) => {
             console.log('added new');
             response.json(newDoc)

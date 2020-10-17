@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="resizetextarea.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body onload="init();">
+    <div class="flex-container">
+        <div class="item uno">
+            <div class="instructions">
+                <i class="fa fa-twitter"></i>
+                <strong>Twitter Clone by Fredy</strong>
+                <p>
+                    <i class="fa fa-heart"></i> On Google Cloud Platform.
+                    <br><i class="fa fa-heart"></i> Using Express JS.
+                    <br><i class="fa fa-heart"></i> HTTPS.
+                    <br><i class="fa fa-heart"></i> Full Stack.
+                    <br><i class="fa fa-heart"></i> Built from scratch.
+                </p>
+            </div>
+        </div>
+        <div class="item dos">
+            <form class="tweet">
+                <div class="tweetbody">
+
+                    <img src="" class="profiles" width="50" height="50" style="margin: 6px;">
+                    <div class="tw-dos">
+                        <textarea rows="1" id="text" placeholder="What's happening?"></textarea>
+                    </div>
+                </div>
+
+                <div class="buttonheader">
+                    <div class="emojis">
+                        <div class="emojis-content">
+                            <div class="smyle" onclick="addText('😀')">😀</div>
+                            <div class="smyle" onclick="addText('😲')">😲</div>
+                            <div class="smyle" onclick="addText('👍')">👍</div>
+                            <div class="smyle" onclick="addText('👀')">👀</div>
+                        </div>
+                    </div>
+                    <button class="button"><strong>Tweet</strong></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="all-tweets">
+        <!-- un tweet inicia -->
+
+        <!-- <div class="tweet-container">
+            <div class="un-tweet">
+                <div class="un-tweet-profile">
+                    <img src="/profilepicture/profile1.png" class="profiles" width="50" height="50"
+                        style="margin: 6px;">
+                </div>
+                <div class="un-tweet-content">
+                    <div class="un-tweet-content-user"><b>@randomuser123</b></div>
+                    <div class="un-tweet-content-body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quia, pariatur odit odio
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- uno comment -->
+
+            <!-- <div class="comment-container">
+                <div class="un-comment">This is a simple comment</div>
+            </div> -->
+
+            <!-- end uno comment -->
+
+            <!-- <div class="un-tweet-reply">
+                <div class="like" onclick="addNewLike(this)">
+                    <div>🖤</div>
+                    <div>555</div>
+                </div>
+                <textarea rows=" 1" class="text-reply" placeholder="Add a comment..."></textarea>
+                        <button class="button reply" onclick="addNewComment(this)"><strong>Reply</strong></button>
+                </div>
+            </div> -->
+            
+            <!-- un tweet termina -->
+
+             
+
+           
+        </div>
+        <script src="client.js"></script>
+</body>
+
+</html>

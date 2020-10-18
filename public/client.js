@@ -1,5 +1,5 @@
 //built from scratch by fredy 
-const API_URL = 'http://twitterclone.fredy.dev/'; //tweet
+const API_URL = 'https://twitterclone.fredy.dev/'; //tweet
 const form = document.querySelector("form");
 const tweetElement = document.querySelector('.all-tweets');
 

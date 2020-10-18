@@ -5,11 +5,11 @@ const rateLimit = require('express-rate-limit');
 const { request, response } = require('express');
 const db = new Datastore({ filename: 'database.db', autoload: true, timestampData: true });
 const app = express();
-const port = 8081;
+const port = 8080;
 const filter = new Filter();
 
 app.listen(port, () => console.log(`Express app listening on port ${port}`));
-app.use('/', express.static('public'));
+//app.use('/', express.static('public'));
 app.use(express.json());
 
 app.get('/alltweets', (request, response) => {
